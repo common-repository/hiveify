@@ -1,0 +1,12 @@
+variables:
+    PLUGIN_SLUG: hiveify
+    PLUGIN_VERSION: 1.0.0
+    WP_ORG_RELEASE_REF: master
+
+include:
+  - project: "aspengrovestudios/wp-org-plugin-deploy"
+    ref: main
+    file: "/scripts/.gitlab-ci.yml"
+
+stages:
+  - deploy
